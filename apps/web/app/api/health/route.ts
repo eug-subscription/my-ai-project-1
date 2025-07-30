@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase'
 import { env } from '@/lib/env'
 
-export async function GET(request: NextRequest) {
+export async function GET(_request: NextRequest) {
   const checks: Record<string, { status: 'ok' | 'error', message: string, timestamp: string }> = {}
   const timestamp = new Date().toISOString()
   
