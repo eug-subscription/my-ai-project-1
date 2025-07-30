@@ -11,8 +11,6 @@
     "test": "vitest"
   },
   "devDependencies": {
-    "@ai-food-enhancer/eslint-config": "workspace:*",
-    "@ai-food-enhancer/tsconfig": "workspace:*",
     "typescript": "5.8.3"
   },
   "peerDependencies": {
