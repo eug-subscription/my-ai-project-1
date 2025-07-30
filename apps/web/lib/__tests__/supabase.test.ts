@@ -20,7 +20,7 @@ describe('Supabase Integration', () => {
 
   it('should perform basic connection test', async () => {
     // Test basic connection with a simple query
-    const { data, error } = await supabase
+    const { error } = await supabase
       .from('test')
       .select('*')
       .limit(1)

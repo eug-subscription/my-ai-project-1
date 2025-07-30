@@ -27,7 +27,7 @@ export async function GET(_request: NextRequest) {
 
   // 2. Supabase Database Connectivity
   try {
-    const { data, error } = await supabase
+    const { error } = await supabase
       .from('_health_check')
       .select('*')
       .limit(1)
@@ -58,7 +58,7 @@ export async function GET(_request: NextRequest) {
 
   // 3. Supabase Auth Service Check
   try {
-    const { data, error } = await supabase.auth.getSession()
+    const { error } = await supabase.auth.getSession()
     
     if (error) {
       throw new Error(error.message)
