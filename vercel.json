@@ -1,11 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "apps/web/package.json",
-      "use": "@vercel/next"
-    }
-  ],
   "env": {
     "NODE_ENV": "production",
     "NEXT_TELEMETRY_DISABLED": "1"
