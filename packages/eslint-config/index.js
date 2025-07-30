@@ -18,24 +18,17 @@ module.exports = {
     }
   },
   rules: {
-    // TypeScript specific rules
     '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     '@typescript-eslint/no-explicit-any': 'warn',
     '@typescript-eslint/prefer-const': 'error',
-    
-    // React specific rules
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
-    
-    // General code quality
     'no-console': 'warn',
     'no-debugger': 'error',
     'prefer-const': 'error',
     'no-var': 'error',
-    
-    // Import rules
     'import/order': [
       'error',
       {
