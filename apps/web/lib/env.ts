@@ -9,9 +9,9 @@ const envSchema = z.object({
   NEXT_PUBLIC_APP_URL: z.string().url().default('http://localhost:3000'),
   
   // Supabase configuration
-  NEXT_PUBLIC_SUPABASE_URL: z.string().url(),
-  NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string().min(1),
-  SUPABASE_SERVICE_ROLE_KEY: z.string().min(1),
+  NEXT_PUBLIC_SUPABASE_URL: z.string().url().default('https://placeholder.supabase.co'),
+  NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string().min(1).default('placeholder-anon-key'),
+  SUPABASE_SERVICE_ROLE_KEY: z.string().min(1).default('placeholder-service-key'),
   
   // Stripe configuration (optional for now)
   NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: z.string().optional(),
